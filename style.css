@@ -72,6 +72,7 @@ header{
     font-weight: 400;
     font-size: 1.8rem;
 }
+/* buttons styling */
 .icon-btn{
     background-color: transparent;
     border: none;
@@ -81,6 +82,7 @@ header{
     background-color: #ced6e0;
     border: none;
     border-radius: 1.2rem;
+    font-size: 0.9rem;
 }
 #button_area{
     display: flex;
