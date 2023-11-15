@@ -76,9 +76,15 @@ header{
     font-size: 1.8rem;
 }
 /* buttons styling */
+.icon-btn, .buttons, .navOptions{
+    transition: all .2s ease-in-out;
+}
 .icon-btn{
     background-color: transparent;
     border: none;
+}
+.icon-btn:hover, .navOptions>a:hover {
+    transform: scale(1.1);
 }
 .buttons{
     padding: 0.9rem 1.6rem;
@@ -86,6 +92,10 @@ header{
     border: none;
     border-radius: 1.2rem;
     font-size: 0.9rem;
+}
+.buttons:hover{
+    background-color: black;
+    color: #ced6e0;
 }
 #button_area{
     display: flex;
@@ -149,4 +159,7 @@ ul:last-child{
 }
 .navOptions a{
     font-size: 1.2rem;
+}
+.navOptions:hover{
+    transform: scale(1.3);
 }
