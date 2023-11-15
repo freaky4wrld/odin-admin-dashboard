@@ -10,13 +10,18 @@ body, .buttons{
 button,a{
     cursor: pointer;
 }
+a{color: black; text-decoration: none;}
+li{
+    list-style: none;
+}
 /* header and it's components styles */
 header{
     background-color: #f1f2f6;
-    padding: 0.9rem 0 0.9rem 1rem;
+    padding: 0.9rem 0.9rem 1rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    border-radius: 0 0 0 3.4rem;
 }
 #userAndSearch{
     display: flex;
@@ -65,22 +70,32 @@ header{
 .nm-md{
     font-weight: 400;
     font-size: 1.4rem;
-    text-decoration: none;
-    color: black;
 }
 .nm-lg{
     font-weight: 400;
     font-size: 1.8rem;
 }
+/* buttons styling */
+.icon-btn, .buttons, .navOptions{
+    transition: all .2s ease-in-out;
+}
 .icon-btn{
     background-color: transparent;
     border: none;
+}
+.icon-btn:hover, .navOptions>a:hover {
+    transform: scale(1.1);
 }
 .buttons{
     padding: 0.9rem 1.6rem;
     background-color: #ced6e0;
     border: none;
     border-radius: 1.2rem;
+    font-size: 0.9rem;
+}
+.buttons:hover{
+    background-color: black;
+    color: #ced6e0;
 }
 #button_area{
     display: flex;
@@ -103,4 +118,48 @@ header{
     flex-direction: column;
     gap: 1rem;
     justify-content: center;
+}
+/* SIDEBAR FOR NAVIGATION */
+
+aside{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 27%;
+    height: 100%;
+    background-color: #dfe4ea;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-radius: 3.4rem 0 0 0;
+}
+.rounded-md{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 18%;
+}
+#logoSection{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+.nm-xl{
+    font-weight: 500;
+    font-size: 2.1rem;
+}
+ul:last-child{
+    margin-top: 3.6rem;
+}
+.navOptions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 
+}
+.navOptions a{
+    font-size: 1.2rem;
+}
+.navOptions:hover{
+    transform: scale(1.3);
 }
